@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navbar{
+    height: 80px;
+    background-color: hsl(190, 100%, 50%);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.navbar a:hover{
+    background-color: hsl(190, 100%, 60%);
+}
+
+.logo{
+    font-family: 'Brush Script MT';
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: black;
+    padding: 0rem 2rem;
+}
+
+.info h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.info p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+a:visited{
+    color: white;
+}
+
+.list a{
+    color:black;
+}
+
+.photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.main-image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.photo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+.about-image{
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.icons{
+    text-align: center;
+}
+
+.icons a{
+    color:black;
+}
+
+.icons a:hover{
+    color:hsl(0, 0%, 30%);
+}
